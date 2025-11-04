@@ -35,6 +35,64 @@ public class Main {
       double z = 6.0;
       System.out.println(x == 6.0); //true (6 and 6.0 are the same value); 
 
+      //IF STATEMENTS: use the boolean expressions to make 
+      //DECISIONS about which code to execute
 
-   }
-}
+      //Determine what value or condition your choice rests on 
+      //EX: Using the elevator at BWL depends on TIME
+      double time = 8.5; //means 8:30 am
+      time = 7.75; // means 7:45am
+      time = 8.25; // means 8:15am 
+
+      //put the CONDITION to test in paranthesis 
+         if (time < 8) {
+      System.out.println("You can take the elevator!"); 
+
+        // if the statemnts BODY
+         // if (condition) {
+         //} code to run it
+          }
+      //Statemnet below is the outside of the if statement, so it'll run away
+      System.out.println("The elevator is only available before 8 AM!");
+
+      // TWO-WAY SELECTION: if block + else block 
+      time = 8.0;
+      if (time < 8 ) {
+         System.out.println("Eligable for elevator!");
+      }
+      else {
+         // Statement in ELSE block runs when IF block is false 
+         System.out.println("take the stairs.."); 
+
+         //Another example of the TWO-Way SELECTION
+         // in this case, using just a boolean VALUE (not an EXPRESSION)
+         boolean heads = false; //flipped tails
+         //if (true)
+         if (heads ) {
+            System.out.println("flipped heads! Wear white");
+
+         }
+         else{
+            System.out.println( "Flipped tails! Weear black"); 
+         }
+        
+
+   
+      }
+
+   
+      
+
+         }
+      
+
+
+  }
+
+
+   
+
+
+
+   
+
