@@ -121,6 +121,60 @@ public class Main {
                      System.out.println("otherwise");
                   }
 
+                   //COMPOUND BOOLEAN EXPRESSION
+                // to TWO conditions in an if statement 
+                    boolean cleanedRoom = true;
+                      boolean didHomework = false;
+
+      //The AND (&&) operator joins twwo espressions
+      //only c0ome sout to TRUE if both expressions are TRUE! 
+
+      if (cleanedRoom == true && didHomework == true)  {
+         System.out.println("Go have fun!");
+      }
+
+      // The OR (||) operater joins two expressions
+      //comes out to TRUE if AT LEAST ONE is TRUE!
+      //(less restriction condition than AND)
+      if ((cleanedRoom == true ) || (didHomework == true) ) {
+         System.out.println("The less strict parent are fine with you going out");
+
+      }
+         //The NOT (!) operater can be used to NEGATE
+         // a booleab expression 
+         if ( ! (didHomework == true)) {
+            System.out.println("Do your CodeCollab! The class is depending on you!");
+
+         }
+         //REMINDER: boolean VARIABLES can be used 
+         //instead of full EXPRESSIONS (with relational operators)
+         if (!didHomework){
+            System.out.println("You did NOT do your HW...");
+
+         }
+
+         //IMPORTANT NOTE ABOUT STRINGS: 
+         //(and other Object data types)
+         //instead, use a String Method called .equals()
+         String course = "AP CS";
+         if (course.equals("AP CS")) {
+            System.out.println("Time to learn Java!");
+         }
+         //.equals in CASE_SENSITIVE 
+         // it checks every single character in order between the 2 Strings 
+
+         String message1 = "Hello World";
+         String message2 = "Hello World";
+         if (message1.equals(message2) ) {
+            System.out.println("The messages match perfectly");
+            // You can mix String VARIABLES with String LITERALS
+            // ex) both are string LITERALS BELOW 
+            if ("hi".equals ("hi")){
+               System.out.println("hi :)");
+
+            }
+
+         }
             
 
           } // this closes the Main METHOD
